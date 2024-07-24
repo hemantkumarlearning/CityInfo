@@ -22,7 +22,9 @@ public class LandController {
    @GetMapping
   // @PreAuthorize("hasRole('USER')")
     public List<Landmark> getAllLandmarks(){
+       System.out.println("This is for github test purpose");
         return landService.getAllLandmarks();
+
     }
 
     @GetMapping("/{id}")
